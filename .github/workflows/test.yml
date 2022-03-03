@@ -10,7 +10,7 @@ jobs:
   # On declare les tâches que notre processus va executer
     steps:
       - name: "install npm"
-        run: apt install npm 
+        run: sudo apt install npm 
       - name: "start npm"
         run: npm start  
       - name: "start test"
