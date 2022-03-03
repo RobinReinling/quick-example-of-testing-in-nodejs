@@ -15,5 +15,7 @@ jobs:
           node-version: '16'
       - name: "install npm"
         run: sudo apt install npm  
+      - name: "start npm"
+        run: npm start 
       - name: "start test plus"
         run: npm run cover 
