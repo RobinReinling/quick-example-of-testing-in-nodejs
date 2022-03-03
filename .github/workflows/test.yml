@@ -10,11 +10,13 @@ jobs:
   # On declare les tâches que notre processus va executer
     steps:
       - uses: actions/checkout@v3
+      - name: "cd doss"
+        run: cd quick-example-of-testing-in-nodejs
       - name: "install npm"
         run: sudo apt install npm 
       - name: "start npm"
         run: npm start  
-      - name: "start test"
-        run: npm test  
       - name: "start test plus"
         run: npm run cover  
+      - name: "start test"
+        run: npm test  
