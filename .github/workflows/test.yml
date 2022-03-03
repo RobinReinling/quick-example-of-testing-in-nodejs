@@ -1,0 +1,19 @@
+name: mon premier test # On donne un titre à notre Workflow
+# On indique a github quand le déclencher
+# Est ce qu'on le déclenche au push, pull request, merge, push sur la branche ""
+on: push
+# On déclare des processus de travail
+jobs:
+# On donne un nom à nos jobs
+  Tests:
+    runs-on: ubuntu-latest
+  # On declare les tâches que notre processus va executer
+    steps:
+      - name: "install npm"
+        run: npm install  
+      - name: "start npm"
+        run: npm start  
+      - name: "start test"
+        run: npm test  
+      - name: "start test plus"
+        run: npm run cover  
