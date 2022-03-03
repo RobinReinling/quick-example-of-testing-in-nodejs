@@ -10,10 +10,10 @@ jobs:
   # On declare les tâches que notre processus va executer
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3.0.0
         with:
           node-version: '16'
       - name: "install npm"
-        run: sudo apt install npm  
+        run: npm install 
       - name: "start test plus"
-        run: npm test 
+        run: npm run cover
