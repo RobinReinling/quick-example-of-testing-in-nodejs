@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
   # On declare les tâches que notre processus va executer
     steps:
-      - uses: actions/checkout@v3
       - name: "cd doss"
         run: cd quick-example-of-testing-in-nodejs
+      - uses: actions/checkout@v3
       - name: "install npm"
         run: sudo apt install npm 
       - name: "start npm"
