@@ -42,4 +42,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USER_NAME }}/testunit:${{APP_VERSION}}
+          tags: ${{ secrets.DOCKER_USER_NAME }}/testunit:$APP_VERSION
